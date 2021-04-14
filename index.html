@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="weather.js"></script>
+</head>
+<style>
+    button{
+        background-color: #0c0c0c;
+        color: #eeeeee;
+        text-align: center;
+        height: 30px;
+    }
+    body{
+        background-color:rgb(47, 91, 172);
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/51y6dy0T8sL._SL1000_.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 40px;
+        font-style: italic;
+    }
+    input[type=text]{
+        width: 25%;
+        height: 25px;
+    }
+</style>
+<body>
+    <center>
+        <h2>Weather Details</h2>
+    <h3>Enter city name:</h3>
+    <input type="text" id="city"><br><br>
+    <button onclick="fetchWeather()">Click me</button>
+
+    <div id="div1">
+
+    </div>
+    </center>
+</body>
+</html>

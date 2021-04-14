@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="covid.js"></script>
+</head>
+<style>
+    h3{
+        font-size: 30px;
+        
+    }
+    h2{
+        font-size: 40px;
+        font-style: italic;
+        
+    }
+    input[type=text]{
+        width: 25%;
+        height: 25px;
+    }
+    body{
+        background-image: url("https://media.istockphoto.com/vectors/coronavirus-seamless-patten-vector-light-gray-minimal-background-with-vector-id1214333429?k=6&m=1214333429&s=612x612&w=0&h=C_NHV2jQX2h5AiaCwdj2B3pYWKNFK4ePU5YrDOGBjNc=");
+    }
+</style>
+<body>
+    <center>
+        <h2>Covid Details</h2>
+    <h3>Enter country name:</h3>
+    <input type="text" id="country"><br><br>
+    <button onclick="getCovid()">Get Details</button>
+
+    <div id="div1">
+
+    </div>
+    </center>
+</body>
+</html>
