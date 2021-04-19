@@ -1,7 +1,4 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-const { SSL_OP_PKCS1_CHECK_2 } = require("node:constants");
-
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCs1jjrKNAIXII4MLxYBlP51h4WDbYobA4",
