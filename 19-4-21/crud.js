@@ -1,4 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const { SSL_OP_PKCS1_CHECK_2 } = require("node:constants");
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCs1jjrKNAIXII4MLxYBlP51h4WDbYobA4",
@@ -41,11 +44,23 @@ const firebaseConfig = {
 
   function readData()
   {
+      var table=document.createElement("table")
+      table.border="1"
+      row=table.insertRow(-1)
+      h1=row.insertCell(-1)
+      h2=row.insertCell(-1)
+      h1.innerHTML="Name"
+      h2.innerHTML="Roll No."
       console.log("Reading data..")
       dbref.on("value",(snap)=>{
           snap.forEach((data)=>{
-              console.log(data.val().sname)
-              console.log(data.val().rollno)
+              r1=table.insertRow(-1)
+              c1=r1.insertCell(-1)
+              c1.innerHTML=data.val().sname
+              c2=r1.insertCell(-1)
+              c2.innerHTML=data.val().rollno
           })
       })
+      var div=document.getElementById("table");
+      div.append(table);
   }
