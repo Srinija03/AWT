@@ -1,4 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCs1jjrKNAIXII4MLxYBlP51h4WDbYobA4",
@@ -41,13 +44,13 @@ const firebaseConfig = {
 
   function readData()
   {
-      var table=document.createElement("table")
+      var table=document.createElement("table");
       table.border="1"
       row=table.insertRow(-1)
       h1=row.insertCell(-1)
       h2=row.insertCell(-1)
-      h1.innerHTML="Name"
-      h2.innerHTML="Roll No."
+      h1.innerHTML="Name";
+      h2.innerHTML="Roll No.";
       console.log("Reading data..")
       dbref.on("value",(snap)=>{
           snap.forEach((data)=>{
