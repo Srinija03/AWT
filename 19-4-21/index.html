@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+    
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="row">
+                <label>Name of student:</label>
+                <input type="text" id="sname">
+            </div>
+            <div class="row">
+                <label>Roll No:</label>
+                <input type="text" id="rollno">
+            </div><br>
+            <button id="insert" onclick="insertData()">Insert</button>
+            <button id="delete" onclick="deleteData()">Delete</button>
+            <button id="update" onclick="updateData()">Update</button>
+            <button id="read" onclick="readData()">Display</button>
+        </div>
+</body>
+</html>
