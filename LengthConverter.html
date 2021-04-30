@@ -9,13 +9,13 @@
        
         function sqmConverter(){
         document.converter.sqft.value = document.converter.sqm.value / 0.092903
-        
         }
         function sqftConverter(){
         document.converter.sqm.value = document.converter.sqft.value * 0.092903
         }
-        
-       
+        function myFunction() {
+     document.converter.reset();
+}
         </script>
 </head>
 <style>
@@ -36,6 +36,7 @@
          <label>Sq m:</label> <input type="text" name="sqm" onChange="sqmConverter()"><br />
        <label> Sq ft:</label> <input type="text" name="sqft" onChange="sqftConverter()"><br />
         <input type="button" value="Convert!" />
+        <input type="button" onclick="myFunction()" value="Clear">
      </form>
         
 </body>
