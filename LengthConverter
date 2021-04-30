@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        function sqmConverter(){
+        document.converter.sqft.value = document.converter.sqm.value / 0.092903
+        
+        }
+        function sqftConverter(){
+        document.converter.sqm.value = document.converter.sqft.value * 0.092903
+        }
+        
+       
+        </script>
+</head>
+<style>
+    input{
+        font-size: 20px;
+    }
+    label{
+        font-size: 20px;
+    }
+    form{
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <h1>Length Converter</h1>
+    <form name="converter">
+         <label>Sq m:</label> <input type="text" name="sqm" onChange="sqmConverter()"><br />
+       <label> Sq ft:</label> <input type="text" name="sqft" onChange="sqftConverter()"><br />
+        <input type="button" value="Convert!" />
+     </form>
+        
+</body>
+</html>
